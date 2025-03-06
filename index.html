@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+						  <h1> <font size="8">Tailwind</font></h1>
+						  <h2> <font size="6" color="70b30f"> Быстрое создание современных веб-сайтов, не выходя из HTML-кода </font> </h2>
+						  <img src="img/qr-code.gif">
+						</textarea>
+					</section>
+				</section>
+				<section> 
+					<section data-markdown>
+						<textarea data-markdown>
+							<h1> <font size="8">Введение</font></h1>
+							<h2> <font size="6" color="70b30f"> Что такое TailWind? </font> </h2>	
+							<p> <font size="5" color="d0d0d0">Tailwind CSS — утилитный фреймворк, основанный на принципе Utility-First, который позволяет разработчикам быстро применять стили, используя предопределенные классы прямо в HTML</font></p>					
+							
+						</textarea>
+					</section>
+				</section>
+				<section> 
+					<section data-markdown>
+						<textarea data-markdown>
+							<p> <font size="5" color="d0d0d0">
+								В мире фронтенд-разработки, где скорость и эффективность имеют ключевое значение, Tailwind CSS занимает особое место. Он предлагает утилитарный подход к стилизации, который не только ускоряет процесс создания веб-интерфейсов, но и делает его более интуитивным.
+							</font></p>
+							<img src="img/1.webp">
+						</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-markdown>
+							<h2><font size="6" color="70b30f">CSS</font></h2>
+							<pre><code data-trim data-noescape>
+								.button {
+								background-color: #4F46E5;
+								color: white;
+								padding: 8px 16px;
+								border-radius: 4px;
+								box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+								}
+								</code></pre>
+								<h2> <font size="6" color="70b30f"> TailWind CSS </font> </h2>
+								<pre><code data-trim data-noescape><script type="text/template">
+									<button class="bg-indigo-500 text-white py-2 px-4 rounded-md shadow-sm">Кнопка</button>
+								</code></pre></script>
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-markdown>
+							<h1> <font size="8">Базовые концепции и работа с фреймворком</font></h1>
+							<p><font size="5" color="d0d0d0">
+								Ключевым аспектом работы с Tailwind CSS является его гибкость и кастомизация. Чтобы эффективно использовать фреймворк, необходимо освоить базовые концепции.
+								Tailwind позволяет настраивать тему проекта через файл tailwind.config.js, где можно задать собственные цвета, шрифты и другие параметры. Директива theme.extend помогает расширить стили без их потери.
+							</font></p>
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-markdown>
+							<p> <font size="5" color="d0d0d0">
+								Фреймворк упрощает создание адаптивных компонентов с утилитарными классами sm:, md:, lg:, которые применяют стили в зависимости от размера экрана. Для интерактивности можно использовать классы состояний, такие как hover:, focus:, active:, что делает интерфейс более динамичным.
+
+Освоив эти концепции, разработчики могут интегрировать Tailwind CSS в проекты, создавая кастомизированные и адаптивные веб-приложения.
+							</font></p>
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1> <font size="8">Преимущества Tailwind CSS</font></h1>
+						<p> <font size="5" color="d0d0d0">
+							Tailwind CSS отличается удобством и продуктивностью.
+							<ul>
+								<li> Скорость разработки <br>
+								
+								Обеспечивает быструю стилизацию благодаря встроенным классам, исключая необходимость запоминания. </li>
+								<li> Эффективность и интуитивность <br>
+								
+								Предопределенные классы упрощают процесс и снижают вероятность ошибок. </li>
+								<li> Оптимизация производительности <br>
+								
+								Небольшой размер пакета обеспечивает высокую производительность и быстрое создание прототипов. </li>
+								<li> Модульность и переиспользование <br>
+								
+								Подходит для легкого переиспользования стилевых блоков, что полезно при масштабировании. </li>
+							</ul>
+						</font></p>
+					</section>
+					<section>
+						<h1> <font size="8">Недостатки Tailwind CSS</font></h1>
+						<p> <font size="5" color="d0d0d0">
+							Tailwind CSS имеет свои недостатки:
+							<ul>
+								<li> Сложность классов <br>
+
+									С увеличением проекта HTML может перегружаться утилитарными классами, усложняя чтение и поддержку кода. </li>
+								<li> Переиспользование стилей <br>
+								
+									Создание уникальных компонентов может требовать усилий для согласованности в дизайне. </li>
+								<li> Кривая обучения <br>
+								
+									Новичкам, привыкшим к традиционному CSS, потребуется время для освоения классов Tailwind, что может замедлить разработку. </li>
+								
+							</ul>
+						</font></p>
+					</section>
+				</section>
+				<section>				  
+					<section>
+						<h2>Редактор HTML с Tailwind CSS</h2>
+						<div style="display: flex;">
+						  <textarea id="codeEditor" style="width: 50%; height: 500px;" placeholder="Введите HTML код с классами Tailwind..."></textarea>
+						  <iframe id="resultFrame" style="width: 50%; height: 500px; border: 1px solid #ccc;"></iframe>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h1> <font size="8">Заключениe</font></h1>
+						<p> <font size="5" color="d0d0d0">
+							Tailwind CSS доказал свою эффективность в современной веб-разработке, предлагая скорость, гибкость и удобство. Несмотря на некоторые недостатки, его преимущества делают его незаменимым инструментом для разработчиков, стремящихся к оптимизации процесса создания веб-проектов. Tailwind CSS изменяет правила игры в фронтенд-разработке, делая веб более доступным и приятным как для разработчиков, так и для пользователей.
+						</font></p>
+				</section>
+				<section>
+					<h1><font size="8">Спасибо за внимание</font></h1>
+					<img src="img/2.gif">
+				</section>
+				  
+			</div>		
+		</div>
+		<script>
+			const codeEditor = document.getElementById('codeEditor');
+			const resultFrame = document.getElementById('resultFrame');
+		  
+			codeEditor.addEventListener('input', () => {
+			  const code = codeEditor.value;
+		  
+			  
+			  const fullHTML = `
+				<!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>Preview</title>
+					<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+				</head>
+				<body>
+					${code}
+				</body>
+				</html>
+			  `;
+		  
+			  
+			  resultFrame.srcdoc = fullHTML;
+			});
+		  </script>
+		  
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			
+			Reveal.initialize({
+				hash: true,
+				progress: true, 
+
+				
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
